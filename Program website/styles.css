@@ -1,0 +1,93 @@
+/* Color palette: Red, Black, White, Gold */
+:root {
+  --red: #c8102e;
+  --black: #000000;
+  --white: #ffffff;
+  --gold: #d4af37;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 5px solid var(--gold);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 160px;
+  width: auto;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 5px;
+}
+
+.title-group {
+  text-align: center;
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 60px;
+  }
+}
+
+
+main {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--red);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+.module-list {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #b8962
